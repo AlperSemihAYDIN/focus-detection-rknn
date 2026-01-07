@@ -2,7 +2,6 @@
 focus_rtsp
 
 # Model file (too large for git)
-*.rknn
 
 # Log files
 result.txt
