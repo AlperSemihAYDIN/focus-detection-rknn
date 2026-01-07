@@ -1,0 +1,12 @@
+/root/focus/result.txt {
+    daily
+    rotate 7
+    maxsize 100M
+    compress
+    missingok
+    notifempty
+    create 0644 root root
+    postrotate
+        systemctl restart focus.service > /dev/null 2>&1 || true
+    endscript
+}

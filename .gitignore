@@ -1,0 +1,19 @@
+# Compiled binary
+focus_rtsp
+
+# Model file (too large for git)
+*.rknn
+
+# Log files
+result.txt
+result.txt.*
+
+# Temporary files
+*.o
+*.tmp
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp

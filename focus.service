@@ -1,0 +1,17 @@
+[Unit]
+Description=Focus Detection Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/focus/focus_rtsp
+WorkingDirectory=/root/focus
+Restart=on-failure
+RestartSec=5
+StandardOutput=null
+StandardError=null
+Environment="RTSP_URL=rtsp://admin:admin123@192.168.1.21:554/stream1"
+
+
+[Install]
+WantedBy=multi-user.target
